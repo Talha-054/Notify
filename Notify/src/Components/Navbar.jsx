@@ -3,7 +3,7 @@ import React from 'react'
 function Navbar() {
     return (
         <>
-            <div className="nav-container border-none w-full h-[10vh]  bg-gradient-to-r from-slate-900 to-slate-700 flex">
+            <div className="nav-container border-none w-full h-[10svh]  bg-gradient-to-r from-slate-900 to-slate-700 flex">
 
                 <section className='user-section border-none  h-full w-3/6 sm:w-4/12 lg:w-1/6 flex justify-start items-center'>
                     <div className="user-profile h-5/6 mx-1 sm:mx-4 lg:mx-8 rounded-full bg-white aspect-square"></div>
