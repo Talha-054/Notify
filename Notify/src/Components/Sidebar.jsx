@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 function Sidebar() {
     return (
         <>
-            <div className="sidebar-container lg:w-1/12 w-1/6  bg-gradient-to-b from-slate-900 to-slate-700 h-[90dvh] flex flex-col ">
+            <div className="sidebar-container lg:w-1/12 w-1/6  bg-gradient-to-b from-slate-900 to-slate-700 h-[90vh] flex flex-col ">
 
                 <section className='w-full h-1/6 flex  justify-center items-center'>
                     <p className='h-1/2 w-2/3 flex justify-center items-center text-5xl hover:scale-125 duration-200 hover:cursor-pointer'><NavLink to="/add-note">📩</NavLink></p>

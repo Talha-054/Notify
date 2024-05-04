@@ -18,7 +18,7 @@ function Notes() {
     return (
         <>
             
-            <div className="main-container z-10 w-5/6 h-[90dvh] bg-gradient-to-br from-slate-900 to-slate-700 lg:w-11/12 absolute bottom-0 right-0 overflow-auto flex flex-wrap  justify-center">
+            <div className="main-container z-10 w-5/6 h-[90vh] bg-gradient-to-br from-slate-900 to-slate-700 lg:w-11/12 absolute bottom-0 right-0 overflow-auto flex flex-wrap  justify-center">
 
                 {notes.map((note)=>{
                     return (
