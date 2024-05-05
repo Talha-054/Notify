@@ -21,8 +21,14 @@ function Edit() {
         setNotes(updatedNotes);
     }
 
-    function deleteText (e){
-        console.log(notes)
+    function deleteNote (e){
+        let eventId = e.target.id;
+        let newArr = updatedNotes.filter((note)=>{
+            return eventId != note.id
+        })
+        updatedNotes =  JSON.parse(JSON.stringify(newArr));
+        console.log(eventId)
+        setNotes(updatedNotes)
     }
 
     function updateText (e){
@@ -60,7 +66,7 @@ function Edit() {
                                     <div className=" w-1/2 flex justify-start items-center"></div>
                                     <div className="icons w-1/2 flex justify-evenly items-center">
                                         <div id={note.id} onClick={handleEditText}  className="edit hover:scale-150 duration-200 hover:cursor-pointer">✏️</div>
-                                        <div id={note.id}  onClick={deleteText} className="delete hover:scale-150 duration-200 hover:cursor-pointer">❌</div>
+                                        <div id={note.id}  onClick={deleteNote} className="delete hover:scale-150 duration-200 hover:cursor-pointer">❌</div>
                                         <div id={note.id} onClick={doneEditing} className="save hover:scale-150 duration-200 hover:cursor-pointer">✔️</div>
                                     </div>
                                 </div>
