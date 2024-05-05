@@ -12,7 +12,7 @@ function Login() {
                         <img class="h-16 w-20 mt-4" src="./assets/title.svg" alt="Notify logo"/>
                     </div>
 
-                    <p class="text-start mt-5 ml-6 m-4 font-medium text-3xl">Login</p>
+                    <p class="text-start mt-5 ml-6 m-4 font-medium text-3xl">Sign In</p>
 
                     <p class="ml-6 mb-0.5 font-medium">Set Username</p>
                     <input class="ml-6 mb-4 w-10/12 border-[0.5px] border-[#bfbbbb] rounded-[4px] h-8" type="text"></input>
@@ -43,7 +43,7 @@ function Login() {
 
                     <div class="button-container flex justify-center items-center mb-5">
                         <NavLink to="/">
-                            <div class="w-5/6">
+                            <div class="w-[252px]">
                                 <button class="w-full text-[#0f1111] text-[13px] border-2 shadow-sm shadow-[#E1DADA] rounded-lg p-1">create account </button>
                             </div>
                         </NavLink>    
