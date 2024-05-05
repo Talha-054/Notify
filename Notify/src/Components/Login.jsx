@@ -14,11 +14,11 @@ function Login() {
 
                     <p class="text-start mt-5 ml-6 m-4 font-medium text-3xl">Login</p>
 
-                    <p class="ml-6 mb-0.5 font-medium">Set Username</p>
+                    <p class="ml-6 mb-0.5 font-medium">Username</p>
                     <input class="ml-6 mb-4 w-10/12 border-[0.5px] border-[#bfbbbb] rounded-[4px] h-8" type="text"></input>
-                    <p class="ml-6 mb-0.5 font-medium">Set Password</p>
+                    <p class="ml-6 mb-0.5 font-medium">Password</p>
                     <input class="ml-6 mb-4 w-10/12 border-[0.5px] border-[#bfbbbb] rounded-[4px] h-8" type="text"></input>
-                    <button class="mb-6 bg-[#FFEF06] hover:bg-[#ffd814] ml-6 w-10/12 rounded-lg p-1 shadow-sm shadow-[#565959]">Submit</button>
+                    <button class="mb-6 bg-[#FFEF06] hover:bg-[#ffd814] ml-6 w-10/12 rounded-lg p-1 shadow-sm shadow-[#565959]">Continue</button>
 
                     <p class="ml-6 mb-5 text-[12px]">By continuing, you agree to notify's <a href="#" class="text-blue-900">Conditions of</a><br /><a href="#" class="text-blue-900">Use</a> and <a href="#"  class="text-blue-900">privacy Notice</a></p>
 
@@ -42,9 +42,9 @@ function Login() {
 
 
                     <div class="button-container flex justify-center items-center mb-5">
-                        <NavLink to="/">
+                        <NavLink to="/Sign-In">
                             <div class="w-5/6">
-                                <button class="w-full text-[#0f1111] text-[13px] border-2 shadow-sm shadow-[#E1DADA] rounded-lg p-1">create account </button>
+                                <button class="w-full text-[#0f1111] text-[13px] border-2 shadow-sm shadow-[#E1DADA] rounded-lg p-1">create Notify account (max 02)</button>
                             </div>
                         </NavLink>    
                     </div>

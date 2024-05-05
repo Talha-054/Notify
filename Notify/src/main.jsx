@@ -7,6 +7,7 @@ import Home from './Components/Home.jsx'
 import Add from './Components/Add.jsx'
 import Edit from './Components/Edit.jsx'
 import Notes from './Components/Notes.jsx'
+import Login from './Components/Login.jsx'
 import SignIn from './Components/SignIn.jsx'
 
 
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/Edit-notes",
         element: <Edit />
+      },
+      {
+        path: "/Login",
+        element: <Login />
       },
       {
         path: "/Sign-In",

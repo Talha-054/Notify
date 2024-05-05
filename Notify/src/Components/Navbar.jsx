@@ -29,7 +29,7 @@ function Navbar() {
 
                     <div className="add-area  h-full lg:h-full w-full flex justify-end  items-center">
                         <div className="button-container  max-w-[150px] min-w-[70px] w-2/6 mx-2 h-4/6">
-                            <NavLink to="/Sign-In">
+                            <NavLink to="/Login">
                                 <button className=' w-full h-full max-w-[150px] min-w-[70px] px-1  bg-blue-600 text-yellow-200 rounded-md hover:bg-blue-700 hover:cursor-pointer ' >Log In</button>
                             </NavLink>
                         </div> 
