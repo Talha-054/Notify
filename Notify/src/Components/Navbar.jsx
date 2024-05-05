@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 function Navbar() {
+
+
+    let screenSize = window.innerWidth;
+    
+
+  
+
     return (
         <>
             <div className="nav-container border-none w-full h-[10svh]  bg-gradient-to-r from-slate-900 to-slate-700 flex">
@@ -10,20 +17,24 @@ function Navbar() {
                     <p className='text-slate-50  text-base '>Username</p>
                 </section>
 
-                <section className='flex flex-col-reverse lg:flex-row w-3/6 sm:w-8/12 lg:w-5/6  h-full'>
-                    <div className="search-bar  h-1/2 lg:h-full lg:w-4/6 lg:justify-center flex justify-end items-center">
-                        <p className='hover:scale-125  duration-200 lg:text-3xl cursor-pointer pb-1 px-2'>🕵</p>
-                        <input type='text' placeholder='Search notes by Title'className='p-1 mx-2 w-4/6 rounded-lg px-4'></input>
-                    </div>
-                    <div className="add-area  h-1/2 lg:h-full lg:w-2/6 flex justify-end lg:justify-end  items-center">
-                        <button className='w- 2/6 h-4/6 px-1 bg-blue-600 text-yellow-200 rounded-md hover:bg-blue-700 hover:cursor-pointer sm:w-2/6  ' >Login</button>
-                        <button className='w- 2/6 h-4/6 px-1 bg-blue-600 text-yellow-200 rounded-md  hover:bg-blue-700 hover:cursor-pointer sm:w-2/6 mx-2 lg:mx-4 '>Sign Up</button>
+                <section className='flex flex-col-reverse lg:flex-row w-3/6 sm:w-8/12 lg:w-5/6 h-full'>
+
+
+                    {/* <div className="search-bar  h-1/2 lg:h-full lg:w-4/6 lg:justify-center flex justify-end items-center ">
+                        <p  className='hover:scale-125  duration-200 lg:text-3xl cursor-pointer pb-1 px-1 sm:px-2'>🕵</p>
+                        <input type='text' placeholder='Search notes by Title'className='mx-2 w-[208px] min-w-[163px] sm:w-4/6 rounded-lg p-1 '></input>
+                    </div> */}
+                                    {/* Seacrh notes featurr to be added later */}
+
+                    <div className="add-area  h-full lg:h-full w-full flex justify-end  items-center">
+                        <button className=' w-2/6 h-4/6 max-w-[150px] min-w-[70px] px-1  bg-blue-600 text-yellow-200 rounded-md hover:bg-blue-700 hover:cursor-pointer   ' >Login</button>
+                        <button className=' w-2/6 h-4/6 max-w-[150px] min-w-[70px] px-1 bg-blue-600 text-yellow-200 rounded-md  hover:bg-blue-700 hover:cursor-pointer  mx-2 lg:mx-4 '>Sign Up</button>
                     </div>
                 </section>
                 
             </div>
         </>
-    )
+    ) 
 }
 
 export default Navbar

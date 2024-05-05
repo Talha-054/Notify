@@ -49,7 +49,7 @@ function Edit() {
                 {notes.map((note)=>{
                     return (
                         <>
-                             <div id={note.id} className=' m-4 rounded-xl bg-[#F0DE36] w-2/3 top-[40vh] h-3/6 max-w-[430px] p-4 flex flex-col shadow shadow-[#F0DE36]'>
+                            <div id={note.id} className=' m-4 rounded-xl bg-[#F0DE36] w-2/3 min-w-[260px]  h-3/6 max-w-[430px] p-4 flex flex-col shadow shadow-[#F0DE36]'>
                                 <p className='w-full h-1/6 bg-[#C6EBC5] flex justify-center font-extrabold items-center overflow-auto'>{note.heading}</p>
                                 {note.edit? (
                                     <textarea id={note.id} onChange={updateText}   className='w-full h-4/6  mt-2 bg-[#FEFDED] p-1 px-2' placeholder='Note' >{note.para}</textarea>
