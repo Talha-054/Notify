@@ -18,9 +18,13 @@ function Login() {
                     <input class="ml-6 mb-4 w-10/12 border-[0.5px] border-[#bfbbbb] rounded-[4px] h-8" type="text"></input>
                     <p class="ml-6 mb-0.5 font-medium">Password</p>
                     <input class="ml-6 mb-4 w-10/12 border-[0.5px] border-[#bfbbbb] rounded-[4px] h-8" type="text"></input>
-                    <NavLink to="/">
-                        <button class="mb-6 bg-[#FFEF06] hover:bg-[#ffd814] ml-6 w-[250px] rounded-lg p-1 shadow-sm shadow-[#565959]">Continue</button>
-                    </NavLink>
+
+                    <div className="continue-button-container w-10/12 flex justify-center items-center">
+                        <NavLink className="w-full" to="/">
+                            <button class="mb-6 bg-[#FFEF06] hover:bg-[#ffd814] ml-6 w-full rounded-lg p-1 shadow-sm shadow-[#565959]">Continue</button>
+                        </NavLink>
+                    </div>
+                       
                    
                     <p class="ml-6 mb-5 text-[12px]">By continuing, you agree to notify's <a href="#" class="text-blue-900">Conditions of</a><br /><a href="#" class="text-blue-900">Use</a> and <a href="#"  class="text-blue-900">privacy Notice</a></p>
 
