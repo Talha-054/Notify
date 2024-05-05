@@ -27,8 +27,15 @@ function Navbar() {
                                     {/* Seacrh notes featurr to be added later */}
 
                     <div className="add-area  h-full lg:h-full w-full flex justify-end  items-center">
-                        <button className=' w-2/6 h-4/6 max-w-[150px] min-w-[70px] px-1  bg-blue-600 text-yellow-200 rounded-md hover:bg-blue-700 hover:cursor-pointer   ' >Login</button>
-                        <button className=' w-2/6 h-4/6 max-w-[150px] min-w-[70px] px-1 bg-blue-600 text-yellow-200 rounded-md  hover:bg-blue-700 hover:cursor-pointer  mx-2 lg:mx-4 '>Sign Up</button>
+                        <div className="button-container  max-w-[150px] min-w-[70px] w-2/6 mx-2 h-4/6">
+                            <NavLink to="/Sign-In">
+                                <button className=' w-full h-full max-w-[150px] min-w-[70px] px-1  bg-blue-600 text-yellow-200 rounded-md hover:bg-blue-700 hover:cursor-pointer ' >Log In</button>
+                            </NavLink>
+                        </div> 
+
+                        {/* <button className=' w-2/6 h-4/6 max-w-[150px] min-w-[70px] px-1 bg-blue-600 text-yellow-200 rounded-md  hover:bg-blue-700 hover:cursor-pointer  mx-2 lg:mx-4 '>Sign Up</button> */}
+
+                                        {/* sign up to be added later */}
                     </div>
                 </section>
                 
