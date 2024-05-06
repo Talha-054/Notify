@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Home from './Home';
 import { useState, useContext } from 'react';
-import { noteContext } from '../contexts/noteContext';
+import { noteContext } from './contexts/NoteContext';
 import { nanoid } from 'nanoid'
+import { userContext } from './contexts/UserContext';
+
+
 
 function Add() {
 
@@ -10,6 +13,23 @@ function Add() {
     const [text, updateText] = useState("");
     const [title, updateTitle] = useState("");
     const [notes, setNotes] = useContext(noteContext);
+    let [user, setUser] = useContext(userContext);
+
+
+    useEffect(()=>{
+        if(user.LoggedIn){
+            let updatedUser = (JSON.parse(localStorage.getItem("users")))
+            for (let item of updatedUser){
+                if (item.id == user.id){
+                    item.data = JSON.parse(JSON.stringify(notes));
+                }
+            }
+            localStorage.setItem("users", JSON.stringify(updatedUser))
+            console.log("LOCAL STORAGE UPDATED")
+        }
+    },[notes])
+
+   
    
 
     
@@ -34,6 +54,7 @@ function Add() {
         setNotes((prevNotes)=> [...prevNotes, note]);
         updateTitle("");
         updateText("");
+        
     }
 
     return (

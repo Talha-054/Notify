@@ -1,6 +1,6 @@
 import React from 'react'
 import { useContext } from 'react'
-import { noteContext } from '../contexts/noteContext'
+import { noteContext } from './contexts/NoteContext'
 
 
 

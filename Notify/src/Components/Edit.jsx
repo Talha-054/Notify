@@ -1,15 +1,35 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useContext } from 'react'
-import { noteContext } from '../contexts/noteContext'
+import { noteContext } from './contexts/NoteContext'
+import { userContext } from './contexts/UserContext';
+
 
 function Edit() {
 
     const [notes, setNotes] = useContext(noteContext);
+    let [user, setUser] = useContext(userContext);
     let [editText, setEditText] = useState(false);
+
     let text = useRef()
 
     let updatedNotes = JSON.parse(JSON.stringify(notes));
     let updatedText = "";
+
+
+
+    useEffect(()=>{
+        if(user.LoggedIn){
+            let updatedUser = (JSON.parse(localStorage.getItem("users")))
+            for (let item of updatedUser){
+                if (item.id == user.id){
+                    item.data = JSON.parse(JSON.stringify(notes));
+                }
+            }
+            localStorage.setItem("users", JSON.stringify(updatedUser))
+            console.log("LOCAL STORAGE UPDATED")
+        }
+    },[notes])
+
 
 
 
@@ -19,6 +39,7 @@ function Edit() {
             note.id == eventId ? note.edit = true : note
         })
         setNotes(updatedNotes);
+
     }
 
     function deleteNote (e){

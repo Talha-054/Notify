@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from './Navbar'
 import Sidebar from './Sidebar'
+import { userContext } from './contexts/UserContext'
+import { useState, useContext } from 'react'
+
 
 function Home() {
 
     const screenSize = window.innerWidth;
+    let [user, setUser] = useContext(userContext);
+
+    useEffect(()=>{
+        console.log("user value updated")
+    },[user])
 
     return (
         <>
