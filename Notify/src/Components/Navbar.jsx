@@ -21,7 +21,7 @@ function Navbar() {
 
                 <section className='user-section border-none  h-full w-3/6 sm:w-4/12 lg:w-1/6 flex justify-start items-center'>
                     <div className="user-profile h-5/6 mx-1 sm:mx-4 lg:mx-8 rounded-full bg-white aspect-square"></div>
-                    <p className='text-slate-50  text-base '>{user.LoggedIn? ((user.name).charAt(0).toUpperCase() + (user.name).slice(1)): "Guest"}</p>
+                    <p className='text-slate-50 text-base '>{user.LoggedIn? ((user.name).charAt(0).toUpperCase() + (user.name).slice(1)): "Guest"}</p>
                 </section>
 
                 <section className='flex flex-col-reverse lg:flex-row w-3/6 sm:w-8/12 lg:w-5/6 h-full'>
