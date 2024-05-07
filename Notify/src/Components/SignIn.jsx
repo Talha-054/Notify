@@ -37,7 +37,7 @@ function Login() {
         if (user.length >= 2){
             passwordField.current.value = "";
             usernameField.current.value = "";
-            alert("You ran out of Storage, max 02 accounts allowed per device!")
+            alert("You ran out of Storage, max 02 accounts allowed per device ⛔")
             return
         }
 
@@ -48,6 +48,7 @@ function Login() {
         if (user.length <= 2){
             localStorage.setItem("users", JSON.stringify(user))
         }
+        alert("✅, Proceed to Login")
     }
 
 

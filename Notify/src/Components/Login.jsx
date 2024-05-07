@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { userContext } from './contexts/UserContext'
 import { noteContext } from './contexts/NoteContext';
 import { useState, useContext } from 'react'
-import { nanoid } from 'nanoid'
+
 
 function Login() {
 
@@ -11,7 +11,6 @@ function Login() {
     useEffect(()=>{
         if(JSON.parse(localStorage.getItem("users"))){
             setUser(JSON.parse(localStorage.getItem("users")))
-            console.log("user updated")
         }
     },[])
 
@@ -37,7 +36,7 @@ function Login() {
         if (x.name == username){
             if (x.key == password){
                 setNotes(x.data)
-                alert(`Sucessfully Logged In as ${username}` )
+                alert(`Login ✅` )
                 x.LoggedIn = true;
                 setUser(x)
                 return
@@ -47,7 +46,7 @@ function Login() {
         }
         }
 
-        alert(`No username named ${username} found in database`)
+        alert(`Login ❌ . Incorrect username/password`)
     }
 
 

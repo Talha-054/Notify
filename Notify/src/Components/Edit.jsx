@@ -8,13 +8,8 @@ function Edit() {
 
     const [notes, setNotes] = useContext(noteContext);
     let [user, setUser] = useContext(userContext);
-    let [editText, setEditText] = useState(false);
-
-    let text = useRef()
 
     let updatedNotes = JSON.parse(JSON.stringify(notes));
-    let updatedText = "";
-
 
 
     useEffect(()=>{
@@ -26,7 +21,6 @@ function Edit() {
                 }
             }
             localStorage.setItem("users", JSON.stringify(updatedUser))
-            console.log("LOCAL STORAGE UPDATED")
         }
     },[notes])
 
@@ -48,7 +42,6 @@ function Edit() {
             return eventId != note.id
         })
         updatedNotes =  JSON.parse(JSON.stringify(newArr));
-        console.log(eventId)
         setNotes(updatedNotes)
     }
 

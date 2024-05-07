@@ -1,14 +1,13 @@
 import React, { useRef } from 'react'
 import { NavLink } from 'react-router-dom'
-import { useState, useContext } from 'react';
-import { noteContext } from './contexts/NoteContext';
+import { useContext } from 'react';
+
 import { userContext } from './contexts/UserContext';
 
 function Navbar() {
 
 
     let [user,setUser] = useContext(userContext);
-    console.log(user)
     
 
     function LogOut (){

@@ -25,7 +25,6 @@ function Add() {
                 }
             }
             localStorage.setItem("users", JSON.stringify(updatedUser))
-            console.log("LOCAL STORAGE UPDATED")
         }
     },[notes])
 

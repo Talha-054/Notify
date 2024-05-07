@@ -8,12 +8,6 @@ import { noteContext } from './contexts/NoteContext'
 function Notes() {
 
     const [notes, setNotes] = useContext(noteContext);
-    
-    
-
-
-
-
 
     return (
         <>
